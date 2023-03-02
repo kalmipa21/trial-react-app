@@ -1,23 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+import FComponent from "./Components/FComponent.js"; //penamaan kelas function harus huruf besar di awal untuk pemanggilan funct
+import ClassCompo from "./Components/ClassCompo";
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <FComponent name="Saputra" message="Siap"></FComponent>
+      <ClassCompo mentor="Tomi" message="Siap" />
     </div>
   );
 }
